@@ -192,6 +192,16 @@
     color: darkblue;
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .Right-nav{
+      display: hide;
+      display: none;
+}
+}
+
 @media (max-width: 575.98px) {
     .about-me .Card p{
         

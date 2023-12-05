@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/services.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+
+</head>
+<body>
+   <div class="content">
+    <div class="nav">
+        <ul class="list-items">
+            <div class="left-nav">
+            <img class="Image-nav" src="/Images/Screenshot_2023-11-16_at_16.26.55-removebg-preview.png" alt="">
+            </div>
+            <div class="Right-nav">
+            <li class="nav-option2"><a href="/Index.html">Home</a></li> 
+            <li class="nav-option2"><a href="/About-me.html">About Me</a></li> 
+            <li class="nav-option1"><a href="/Services.html">Services</a></li>
+            
+            </div>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="main">
+            <h2>A nice website is the first step to greatness</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, numquam non. Itaque voluptatibus a sit. Nisi tempore dignissimos explicabo suscipit.
+            </p>
+            <button class="btn Book btn-primary" id="Book">Book Our Services</button>
+        </div>
+        <div class="main-2">
+            <img src="/Images/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="">
+        </div>
+
+        </div>
+
+        <div class="break"></div>
+
+        <div class="main-content-2">
+            <div class="main-3">
+                <h1>Lite</h1>
+                <h3>£50+ VAT</h3>
+                <p> Lorem, ipsum dolor. <br> Lorem ipsum dolor sit amet. <br> Lorem ipsum dolor sit am<p>
+                <button class="btn-primary"></button>
+                <p>One time payment</p>
+                </p>
+            </div>
+         
+            <div class="main-4">
+                <h1>Pro</h1>
+                <h3>£200+ VAT</h3>
+                <p> Lorem, ipsum dolor. <br> Lorem ipsum dolor sit amet. <br> Lorem ipsum dolor sit am<p>
+                <button class="btn-primary"></button>
+                <p>One time payment</p>
+                </p>
+            </div>
+            <div class="main-5">
+                <h1>Legendary</h1>
+                <h3>£400+ VAT</h3>
+                <p> Lorem, ipsum dolor. <br> Lorem ipsum dolor sit amet. <br> Lorem ipsum dolor sit am<p>
+                <button class="btn-primary"></button>
+                <p>One time payment</p>
+                </p>
+            </div>
+        </div>
+
+        <div class="contact-us">
+            <div class="form" id="form">
+                <h1>Contact Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quod sed delectus voluptates possimus iste animi commodi quam consequuntur accusamus.</p>
+                <label class="name-1" for="name">Enter your name</label>
+                <input class="name-2" type="text" name="name" id="name" required placeholder="Ben...">
+                <br>
+                <label class="email-1" for="email">Enter your Email</label>
+                <input class="email-2" type="email" name="email" id="email" required placeholder="Ben10@hotmail.co.uk...">
+                <label for="message" class="message-label">Enter your message</label>
+                <textarea class="message" name="message" id="message" cols="40" rows="5" placeholder="Enter text"></textarea>
+                <button class="btn submit btn-primary">Submit!</button>
+            </div>
+            
+        </div>
+
+
+        
+        
+    </div>
+   
+   <script>
+    $('#Book').click(() => {
+        console.log('hello')
+        $('#form').get(0).scrollIntoView({ behavior: 'smooth' });
+    })
+   </script>
+</body>

@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* NAVBAR */
+/* NAVBAR */
+
+body, html{
+    height: 100vh;
+    background:url(/Images/19366.jpg) no-repeat;
+    background-size: cover;
+    overflow: scroll;
+}
+
+.list-items{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-nav{
+    justify-content: flex-start;
+}
+
+.Right-nav {
+    display: flex;
+    padding-right: 20px;
+    
+}
+
+.Right-nav li {
+    padding: 20px;
+}
+.Right-nav li a{
+    justify-self: end;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.Right-nav li a:hover{
+    text-decoration: underline;
+}
+.Right-nav li {
+    list-style: none;
+    justify-content: end;
+}
+
+.left-nav img {
+    padding-top: 10px;
+    height: 75px;
+}
+
+/* Main */
+
+body{
+    height: 100vh;
+    background:url(/Images/19366.jpg) no-repeat;
+    background-size: cover;
+}
+
+.header{
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.header hr{
+    width: 200px;
+    margin: auto;
+    height: 0px;
+    border-bottom: 2px solid black;
+}
+
+.main-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px
+}
+
+.objective{
+    padding: 0 20px;
+}
+.objective p{
+    width: 100%;
+}
+.what-i-do{
+    padding: 0px 20px;
+    margin: auto;
+}
+
+.what-i-do-title{
+    padding: 10px 0px;
+    margin: auto;
+}
+
+.list{
+    display: flex;
+    padding: 20px;
+}
+.skills-list {
+    width: 100%;
+}
+
+.skills-list li{
+    list-style: none;
+    font-size: large;
+    padding-bottom: 10px;
+    
+}
+
+.skills-list-2 {
+    width: 50%;
+}
+
+.skills-list-2 li{
+    list-style: none;
+    font-size: large;
+    padding-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content:center;
+    margin: auto;
+}
+
+.buttons button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* Profile Pic */
+
+.profile-pic {
+    position: relative;
+    perspective: 1000px;
+}
+
+.profile-image {
+    display: block;
+    height: 500px;
+    width: auto;
+    margin: auto;
+    border-radius: 12px;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+}
+
+.back-face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    transition: transform 0.6s ease;
+    backface-visibility: hidden;
+    background-color: none;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.profile-pic:hover .profile-image {
+    transform: rotateY(-180deg);
+}
+
+.profile-pic:hover .back-face {
+    transform: rotateY(0deg);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* For screens smaller than 576px (extra small devices) */
+@media (max-width: 575.98px) {
+    .main-body {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 40px
+    }
+    .btn-primary {
+        margin-bottom: 10px;
+    }
+    /* Adjust other styles as needed for smaller screens */
+  }
+  
+  /* For screens between 576px and 767px (small devices) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .main-body {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 40px
+    }
+    .btn-primary {
+        margin-bottom: 10px;
+    }
+    /* Add responsive styles for small devices if needed */
+  }
+  
+  /* For screens between 768px and 991px (medium devices) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .main-body {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 40px
+    }
+    .btn-primary {
+        margin-bottom: 10px;
+    }
+    /* Add responsive styles for medium devices if needed */
+  }
+  
+  /* For screens between 992px and 1199px (large devices) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Add responsive styles for large devices if needed */
+  }
+  
+  /* For screens larger than or equal to 1200px (extra-large devices) */
+  @media (min-width: 1200px) {
+    /* Add responsive styles for extra-large devices if needed */
+  }

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* NAVBAR */
+
+.site-content{
+    height: 100vh;
+    background:url(/Images/19366.jpg) no-repeat;
+    background-size: cover;
+}
+
+.list-items{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-nav{
+    justify-content: flex-start;
+}
+
+.Right-nav {
+    display: flex;
+    padding-right: 20px;
+    
+}
+
+.Right-nav li {
+    padding: 20px;
+}
+.Right-nav li a{
+    justify-self: end;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.Right-nav li a:hover{
+    text-decoration: underline;
+}
+.Right-nav li {
+    list-style: none;
+    justify-content: end;
+}
+
+.left-nav img {
+    padding-top: 10px;
+    height: 75px;
+}
+/* Main */
+.Card{
+    background: blue
+}
+.about-me {
+    display: flex;
+    height: 55%;
+    padding: 20px;
+    padding-bottom: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.about-me .Card{
+    justify-content: center;
+    width: 75%;
+    display: block;
+    align-items: center;
+    margin: auto;
+    padding: 20px 10px;
+    background: none;
+    border: none;
+}
+.about-me .Card p{
+  
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    width: 60%;
+}
+
+/* Button */
+
+
+
+/* Typing Keyframe */
+@keyframes bounce-in-top {
+    0% {
+      -webkit-transform: translateY(-500px);
+              transform: translateY(-500px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: translateY(-65px);
+              transform: translateY(-65px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: translateY(-28px);
+              transform: translateY(-28px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    90% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+
+.text-type{ 
+    -webkit-animation: bounce-in-top 1.3s both;
+	        animation: bounce-in-top 1.3s both;
+            font-size: 50px;
+            font-weight: 500;
+            }
+   
+/* Social media list */
+
+.social-media {
+    display: flex;
+    padding-top: 20px;
+    padding-right: 10px;
+    width: 100%;
+    justify-content: center;
+    padding-right: 40px;
+
+}
+
+.social-icons{ 
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.social-icons li {
+  
+    list-style: none;
+    margin: auto 10px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    justify-content: center;
+
+}
+
+.social-icons li i{
+    color: blue;
+    font-size:x-large;
+ 
+}
+
+.social-icons li i:hover{
+
+    color: darkblue;
+}
+
+@media (max-width: 575.98px) {
+    .about-me .Card p{
+        
+        width: 100%;
+    }
+    /* Adjust other styles as needed for smaller screens */
+  }
+  
+  /* For screens between 576px and 767px (small devices) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .about-me .Card p{
+        
+        width: 90%;
+    }
+    /* Add responsive styles for small devices if needed */
+  }
+  
+  /* For screens between 768px and 991px (medium devices) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .about-me .Card p{
+        
+        width: 80%;
+    }
+    /* Add responsive styles for medium devices if needed */
+  }
+
+  
+  /* For screens between 992px and 1199px (large devices) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Add responsive styles for large devices if needed */
+  }
+  
+  /* For screens larger than or equal to 1200px (extra-large devices) */
+  @media (min-width: 1200px) {
+    /* Add responsive styles for extra-large devices if needed */
+  }

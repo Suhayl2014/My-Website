@@ -12,7 +12,9 @@
     height: 100vh;
     background:url(/Images/19366.jpg) no-repeat;
     background-size: cover;
+    overflow: scroll;
 }
+
 
 .list-items{
     display: flex;
@@ -199,6 +201,9 @@
   }
   .text-type{
     font-size: 20px;
+  }
+  .Image-nav {
+    display: none;
   }
 
 }

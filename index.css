@@ -197,6 +197,10 @@
   .Right-nav {
     display: none;
   }
+  .text-type{
+    font-size: 20px;
+  }
+
 }
 
 
